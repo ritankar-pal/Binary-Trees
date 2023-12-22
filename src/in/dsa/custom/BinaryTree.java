@@ -63,7 +63,7 @@ public class BinaryTree {
 	}
 
 
-	private static class Node {
+	private class Node {
 		
 		int value; 
 		Node left;
