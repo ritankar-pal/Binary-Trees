@@ -1,5 +1,6 @@
 package in.dsa.custom;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class MainApp {
@@ -12,6 +13,12 @@ public class MainApp {
 		
 		binaryTree.populate(scanner);
 		
-		binaryTree.display();
+		
+		List<Integer> list = binaryTree.boundaryAnticlockwise();
+		list.forEach(row ->{
+			System.out.print(row + " ");
+		});
+		
+//		binaryTree.display();
 	}
 }		
