@@ -1,9 +1,9 @@
 package in.dsa.bst;
 
 public class LCAOfBST {
-	
-public static int getLCA(BinaryTreeNode<Integer> root, int a, int b) {
-		
+
+	public static int getLCA(BinaryTreeNode<Integer> root, int a, int b) {
+
 		//base condition::
 		if(root == null) return -1;
 
@@ -34,9 +34,14 @@ public static int getLCA(BinaryTreeNode<Integer> root, int a, int b) {
 		return root.data;
 	}
 
-  
-  class BinaryTreeNode<T> { T data; BinaryTreeNode<T> left; BinaryTreeNode<T> right;
-  
-  public BinaryTreeNode(T data) { this.data = data; } }
- 
+
+	class BinaryTreeNode<T> 
+	{ 
+		T data; BinaryTreeNode<T> left; 
+		BinaryTreeNode<T> right;
+
+		public BinaryTreeNode(T data) { this.data = data; } 
+
+	}
+
 }
